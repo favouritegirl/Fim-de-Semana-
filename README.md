@@ -1,7 +1,7 @@
 # 💻 Projeto Fim De Semana
 
 <center>
-   <img src="https://user-images.githubusercontent.com/69327864/181111998-83eaec7c-d2b6-444a-bff6-0eb883983e7d.png" width="40%"/>
+   <img src="![Logo - Fim de Semana](https://github.com/favouritegirl/Fim-de-Semana-/assets/103149189/6b504708-7a93-4c25-ade1-87290abffb5a)" width="40%"/>
 </center
   
 <br>
