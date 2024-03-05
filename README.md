@@ -10,7 +10,7 @@
 O projeto Fim de Semana surge com a ideia de criar uma aplicação web clonada da esteira de pedidos do Ifood para a encomenda e entrega de produtos alimentícios.
 Na primeira instância desenvolveremos o projeto utilizando tecnologias voltadas para facilitar o desenvolvimento em ambientes de pequena escala. Inicialmente, o foco estará na execução local da aplicação.
 > Status: Em desevolvimento
-## Technologies Used: Para construir a aplicação, faremos uso das seguintes ferramentas tecnológicas:
+# Para construir a aplicação, faremos uso das seguintes ferramentas tecnológicas:
 
 <table>
   <tr>
