@@ -1,1 +1,19 @@
+CREATE DATABASE FDS;
 
+USE FDS;
+
+CREATE TABLE consumidor (
+    id_consumidor INT AUTO_INCREMENT PRIMARY KEY,
+    nome_completo VARCHAR(100),
+    email VARCHAR(100)
+);
+
+CREATE TABLE endereco (
+    id_endereco INT AUTO_INCREMENT PRIMARY KEY,
+    cep VARCHAR(10),
+    id_consumidor INT,
+    FOREIGN KEY (id_consumidor) REFERENCES consumidor(id_consumidor)
+);
+
+SHOW DATABASES;
+SHOW tables;
