@@ -9,6 +9,23 @@
 ## :dart: Objetivo do projeto:
 O projeto Fim de Semana surge com a ideia de criar uma aplicação web clonada da esteira de pedidos do Ifood para a encomenda e entrega de produtos alimentícios.
 Na primeira instância desenvolveremos o projeto utilizando tecnologias voltadas para facilitar o desenvolvimento em ambientes de pequena escala. Inicialmente, o foco estará na execução local da aplicação.
+> Status: Em desevolvimento
+## Technologies Used: Para construir a aplicação, faremos uso das seguintes ferramentas tecnológicas:
+
+<table>
+  <tr>
+    <td>MySQL</td>
+    <td>Python 3</td>
+    <td>Django</td>
+    <td>React</td>
+  </tr>
+  <tr>
+    <td>6.*</td>
+    <td>7.4</td>
+    <td>2.0</td>
+    <td>8.0</td>
+  </tr>
+</table>
 
 ## ⚙️ Funcionalidades:
    - Login: realiza o login do usuário e armazena as informações de autenticação do usuário no local storage
