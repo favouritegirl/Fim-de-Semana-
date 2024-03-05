@@ -1,66 +1,76 @@
-# Fim-de-Semana- <p align="center"><a href="https://laravel.com" target="_blank"><img src="" width="400" alt="Laravel Logo"></a></p>
+# 💻 Projeto Fim De Semana
 
-<p align="center">
-<a href=""><img src="" alt="Build Status"></a>
-<a href=""><img src="" alt="Total Downloads"></a>
-<a href=""><img src="" alt="Latest Stable Version"></a>
-<a href=""><img src="" alt="License"></a>
-</p>
+<center>
+   <img src="https://user-images.githubusercontent.com/69327864/181111998-83eaec7c-d2b6-444a-bff6-0eb883983e7d.png" width="40%"/>
+</center
+  
+<br>
+  
+## :dart: Objetivo do projeto:
+O projeto Fim de Semana surge com a ideia de criar uma aplicação web clonada da esteira de pedidos do Ifood para a encomenda e entrega de produtos alimentícios.
+Na primeira instância desenvolveremos o projeto utilizando tecnologias voltadas para facilitar o desenvolvimento em ambientes de pequena escala. Inicialmente, o foco estará na execução local da aplicação.
 
-## Sobre o fim de semana
+## ⚙️ Funcionalidades:
+   - Login: realiza o login do usuário e armazena as informações de autenticação do usuário no local storage
+   - Cadastro: efetua o cadastro de um novo usuário e redireciona para tela de cadastro de endereço
+   - Cadastro de endereço: realiza o cadastro do usuário e redireciona para a tela de Home
+   - Home: renderiza todos os restaurantes, possui um filtro por categoria e redireciona para página de busca ao clicar no input de busca
+   - Busca: realiza a busca de restaurantes pelo nome
+   - Home e Busca: ao clicar nos cards dessas tela o usuário é redirecionado para a página do restaurante selecionado
+   - Restaurantes: renderiza as informações do restaurante e seus produto, ao clicar em adicionar ele abre um pop-up para informar a quantidade e ao confirmar o item é adicionado ao carrinho, também é possível remover esse item, não é possível adicionar itens de restaurantes distintos
+   - Carrinho: o usuário pode remover itens, efetuar a compra, se existir uma compra em andamento só é possível realizar outra quando está for concluída
+   - As únicas páginas públicas são Login e Cadastro, as outra só podem ser acessadas por usuários logados
+ 
+## ⚙️ O que ainda não funciona:
+- Não foi implementado responsividade para desktop
 
-O fim de semana e 
+## :books: Bibliotecas utilizadas:
+- styled-components
+- axios
+- react-router-dom
+- material ui
+- moment
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🔗 Link Projeto: 
+Acesse [clicando aqui!](http://rappi4-renan.surge.sh/)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 📸 Imagens:
+   
+#### MOBILE
+![image](https://user-images.githubusercontent.com/69327864/181114053-51319a84-0b22-46ba-9b2f-730ccab8a960.png)
+![image](https://user-images.githubusercontent.com/69327864/181119451-d9685bb2-2108-4f63-a92e-75acd76e9abd.png)
 
-## Learning Laravel
+![image](https://user-images.githubusercontent.com/69327864/181114387-b7b0b60a-c2c6-499d-80ec-9193a66e84fd.png)
+![image](https://user-images.githubusercontent.com/69327864/181118556-991524ff-fe51-4b5e-8cc4-b759a02cce32.png)
+![image](https://user-images.githubusercontent.com/69327864/181118756-80122230-3333-450d-8cec-6f0b73e84048.png)
+![image](https://user-images.githubusercontent.com/69327864/181118798-39acca2d-9f63-4e8d-ae2d-cfc425c635dd.png)
+![image](https://user-images.githubusercontent.com/69327864/181118859-3e2ffcf8-01eb-488c-bb0e-011f03c1e657.png)
+![image](https://user-images.githubusercontent.com/69327864/181119035-5e0dfd3e-639c-433f-9d69-27c9ef672020.png)
+![image](https://user-images.githubusercontent.com/69327864/181119614-04edf7bb-4139-42ea-9b26-73c737a5ebfa.png)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## :file_folder: Caso queira executar a aplicação localmente
 
-## Laravel Sponsors
+#### Clone do repositório
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+```shell
+$ git clone <https://github.com/Renan-Ma/Rappi4.git>
+```
 
-### Premium Partners
+#### Instale as dependêmcias
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+```shell
+$ npm install
+```
 
-## Contributing
+#### Execute a aplicação 
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+```shell
+$ npm start
+```
+   
+## 👨‍💻 Desenvolvedor:
+   
+| [Renan Martinez](https://github.com/Renan-Ma) | 
 
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
