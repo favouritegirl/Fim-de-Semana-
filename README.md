@@ -1,27 +1,13 @@
-# 💻 Projeto Fim De Semana
-![Logo - Fim de Semana](https://github.com/Renan-Ma/Rappi4/assets/103149189/ee0944f9-39c6-444a-9b02-187a5ec9047a)
+# 💻 Projeto Rappi4
 
+<center>
+   <img src="https://user-images.githubusercontent.com/69327864/181111998-83eaec7c-d2b6-444a-bff6-0eb883983e7d.png" width="40%"/>
+</center
+  
+<br>
   
 ## :dart: Objetivo do projeto:
-O projeto Fim de Semana surge com a ideia de criar uma aplicação web clonada da esteira de pedidos do Ifood para a encomenda e entrega de produtos alimentícios.
-Na primeira instância desenvolveremos o projeto utilizando tecnologias voltadas para facilitar o desenvolvimento em ambientes de pequena escala. Inicialmente, o foco estará na execução local da aplicação.
-> Status: Em desevolvimento
-### Para construir a aplicação, faremos uso das seguintes ferramentas tecnológicas:
-
-<table>
-  <tr>
-    <td>MySQL</td>
-    <td>Python 3</td>
-    <td>Django</td>
-    <td>React</td>
-  </tr>
-  <tr>
-    <td>6.*</td>
-    <td>7.4</td>
-    <td>2.0</td>
-    <td>8.0</td>
-  </tr>
-</table>
+O projeto é baseado em aplicativos de comida (iFood, UberEats e Rappi) e é do tipo mobile first. O projeto foi desenvolvido com base no layout elaborado pela designer Camila Mizutani (no qual o aplicativo IFood foi usado como referência). 
 
 ## ⚙️ Funcionalidades:
    - Login: realiza o login do usuário e armazena as informações de autenticação do usuário no local storage
@@ -35,12 +21,55 @@ Na primeira instância desenvolveremos o projeto utilizando tecnologias voltadas
    - As únicas páginas públicas são Login e Cadastro, as outra só podem ser acessadas por usuários logados
  
 ## ⚙️ O que ainda não funciona:
- 
+- Não foi implementado responsividade para desktop
 
 ## :books: Bibliotecas utilizadas:
+- styled-components
+- axios
+- react-router-dom
+- material ui
+- moment
 
-   
-## 👨‍💻 Desenvolvedores:
-   
+## 🔗 Link Projeto: 
+Acesse [clicando aqui!](http://rappi4-renan.surge.sh/)
 
+## 📸 Imagens:
+   
+#### MOBILE
+![image](https://user-images.githubusercontent.com/69327864/181114053-51319a84-0b22-46ba-9b2f-730ccab8a960.png)
+![image](https://user-images.githubusercontent.com/69327864/181119451-d9685bb2-2108-4f63-a92e-75acd76e9abd.png)
+
+![image](https://user-images.githubusercontent.com/69327864/181114387-b7b0b60a-c2c6-499d-80ec-9193a66e84fd.png)
+![image](https://user-images.githubusercontent.com/69327864/181118556-991524ff-fe51-4b5e-8cc4-b759a02cce32.png)
+![image](https://user-images.githubusercontent.com/69327864/181118756-80122230-3333-450d-8cec-6f0b73e84048.png)
+![image](https://user-images.githubusercontent.com/69327864/181118798-39acca2d-9f63-4e8d-ae2d-cfc425c635dd.png)
+![image](https://user-images.githubusercontent.com/69327864/181118859-3e2ffcf8-01eb-488c-bb0e-011f03c1e657.png)
+![image](https://user-images.githubusercontent.com/69327864/181119035-5e0dfd3e-639c-433f-9d69-27c9ef672020.png)
+![image](https://user-images.githubusercontent.com/69327864/181119614-04edf7bb-4139-42ea-9b26-73c737a5ebfa.png)
+
+
+
+## :file_folder: Caso queira executar a aplicação localmente
+
+#### Clone do repositório
+
+```shell
+$ git clone <https://github.com/Renan-Ma/Rappi4.git>
+```
+
+#### Instale as dependêmcias
+
+```shell
+$ npm install
+```
+
+#### Execute a aplicação 
+
+```shell
+$ npm start
+```
+   
+## 👨‍💻 Desenvolvedor:
+   
+| [Renan Martinez](https://github.com/Renan-Ma) | 
 
