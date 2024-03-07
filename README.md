@@ -35,7 +35,7 @@ Na primeira instância desenvolveremos o projeto utilizando tecnologias voltadas
    - As únicas páginas públicas são Login e Cadastro, as outra só podem ser acessadas por usuários logados
  
 ## ⚙️ O que ainda não funciona:
-- 
+ 
 
 ## :books: Bibliotecas utilizadas:
 
