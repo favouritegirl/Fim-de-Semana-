@@ -38,7 +38,8 @@ class consumidor(AbstractBaseUser, PermissionsMixin):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=100, blank=True, null=True)
     email = models.CharField(max_length=100, unique=True, blank=True, null=True)
-    password = models.CharField(max_length=100, unique=True, blank=True, null=True)
+    telefone = models.CharField(max_length=13, unique=True, blank=True, null=True)
+    cpf = models.CharField(max_length=11 , unique=True, blank=True, null=True   )
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['name']
@@ -49,3 +50,9 @@ class Endereco(models.Model):
     id = models.IntegerField(primary_key=True)
     cep = models.CharField(max_length=10, blank=True, null=True)
     id_consumidor = models.ForeignKey(consumidor, on_delete=models.DO_NOTHING, db_column='consumidor', blank=True, null=False)
+
+class Email(models.Model):
+    assunto = models.CharField(max_length=100, blank=True, null=True)
+    mensagem = models.CharField(max_length=100, blank=True, null=True)
+    remetente = models.CharField(max_length=100, blank=True, null=True)
+    destinatarios = models.CharField(max_length=100, blank=True, null=True)

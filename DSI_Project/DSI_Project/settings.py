@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'Ifood',
     'rest_framework',
     'rest_framework.authtoken' ,
-]
+    'corsheaders',
+    ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -52,6 +53,12 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+]
+
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:3000',
+    'http://192.168.15.13:3000',   
 ]
 
 ROOT_URLCONF = 'DSI_Project.urls'
@@ -114,6 +121,14 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587  # Porta do servidor SMTP
+EMAIL_USE_TLS = True  # Use TLS para conexão segura
+EMAIL_HOST_USER = 'andrefelippecarvalho@gmail.com'  # Seu endereço de e-mail
+EMAIL_HOST_PASSWORD = 'bjlg eips vzgj vyze'  # Sua senha de e-mail
 
 
 # Internationalization

@@ -1,8 +1,7 @@
 from django.contrib import admin
 from django.urls import path
 from rest_framework import routers
-from Ifood.views import UserView ,  LoginUserView, RegisterUserView
-
+from Ifood.views import UserView ,  LoginUserView, RegisterUserView, SendEmailView
 """
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
@@ -15,6 +14,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('register/', RegisterUserView.as_view(), name='register'),
     path('login/', LoginUserView.as_view(), name='login'),
+    path('enviar-email/',SendEmailView.as_view(), name='enviar_email'),
     path('user/<int:id>', UserView.as_view(), name='user')
 ]
 

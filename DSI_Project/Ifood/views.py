@@ -1,7 +1,7 @@
 from .models import consumidor, Endereco
 from rest_framework import viewsets, status
 from datetime import datetime
-from .serializers import ConsumidorSerializer , EnderecoSerializer
+from .serializers import ConsumidorSerializer , EnderecoSerializer, EmailSerializer
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from django.shortcuts import get_object_or_404
@@ -11,6 +11,8 @@ from django.db.models import Q
 import requests
 import random
 from django.core.exceptions import ObjectDoesNotExist
+from django.core.mail import send_mail
+from django.http import HttpResponse
 
 #Página de Cadastro
 class RegisterUserView(APIView):
@@ -27,8 +29,9 @@ class LoginUserView(APIView):
 
     def post(self, request):
         email = request.data.get('email')
-        password = request.data.get('password')
-        user = consumidor.objects.filter(email=email, password=password).first()
+        telefone = request.data.get('telefone')
+        cpf = request.data.get('cpf')
+        user = consumidor.objects.filter(email=email, telefone=telefone).first()
 
         if user is None:
             return Response({'error': 'Credenciais inválidas'}, status=400)
@@ -62,3 +65,31 @@ class UserView(APIView):
             serializer.save()
             return Response(serializer.data)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    
+
+
+class SendEmailView(APIView):
+    permission_classes = [AllowAny]
+
+    def post(self, request):
+        # Verifica se os dados recebidos são para envio de e-mail
+        if 'assunto' in request.data and 'mensagem' in request.data and 'remetente' in request.data and 'destinatarios' in request.data:
+            assunto = request.data['assunto']
+            mensagem = request.data['mensagem']
+            remetente = request.data['remetente']
+            destinatarios = request.data['destinatarios']
+
+            # Envia o e-mail
+            send_mail(
+                assunto,
+                mensagem,
+                remetente,
+                destinatarios,
+                fail_silently=False,
+            )
+
+            # Retorna uma resposta JSON
+            return Response({'status': 'E-mail enviado com sucesso!'})
+        else:
+            return Response({'error': 'Dados incompletos para envio de e-mail'}, status=400)
+    
